@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  vars:
+  remote_user: root
+  tasks:
+   - name: variable tutorial
+     shell: echo " The hostname of this machine is {{ ansible_hostname }} " > defaultevariable.txt

@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  vars:
+   Color: 
+    - Green
+    - Black
+    - Red
+  remote_user: root
+  tasks:
+   - name: variable tutorial
+     shell: echo " My favourite color is {{ Color[2] }} and the Color which i don't like  is {{ Color[0] }}  " > ansiblevariable2.txt

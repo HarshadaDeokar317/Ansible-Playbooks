@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  vars:
+   Color: Green
+   Car: Ferrari
+   Place: Pune
+  remote_user: root
+  tasks:
+   - name: variable tutorial
+     shell: echo " My Car is {{ Car }} and the Color of the car is {{ Color }} and place is {{ Place }} " > ansiblevariable.txt

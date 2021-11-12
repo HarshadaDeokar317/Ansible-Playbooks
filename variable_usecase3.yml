@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  vars:
+  remote_user: root
+  tasks:
+   - include_vars: variables.txt
+   - name: variable tutorial
+     shell: echo " My Car is {{ Car }} and the Color of the car is {{ Color }} and place is {{ Place }} " > ansiblevariable.txt
