@@ -1,0 +1,9 @@
+---
+- name: install multiple packages
+  hosts: 10.136.57.253
+  tasks:
+   - name: install packages
+     yum: name:{{item}} state:latest
+     with_items:
+      - make
+      - wget
