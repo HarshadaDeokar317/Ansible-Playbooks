@@ -1,0 +1,8 @@
+---
+- hosts: 10.136.57.253
+  
+  tasks:
+    - name: helloworld
+      debug:
+        msg: "hello world"
+        
