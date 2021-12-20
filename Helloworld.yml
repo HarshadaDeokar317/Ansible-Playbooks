@@ -1,5 +1,6 @@
 ---
-- hosts: 10.136.57.253
+- hosts: localhost
+  connection: local
   
   tasks:
     - name: helloworld
